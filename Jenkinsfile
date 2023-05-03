@@ -1,10 +1,10 @@
 pipeline{
     agent any
     stages{
-        stage('checkout'){
+        stage('checkout') {
             steps{
                 checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/greespring/jenkins-project2']])
-        stage('hello-world'){
+        stage('hello-world') {
             steps{
                 echo "hello world"
                     }
